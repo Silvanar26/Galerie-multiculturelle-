@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    color: #000;
+}
+
+h1 {
+    font-family: "Old Standard TT", serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Old Standard TT", serif;
+    font-size: 62px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0;
+}
+.header-image {
+    width: 100%; /* Occupe toute la largeur de la page */
+    height: 500px; /* Hauteur fixe de 500px, ajuste selon tes besoins */
+    object-fit: cover; /* Remplit l'espace tout en gardant les proportions */
+    display: block;
+    margin: 0 auto;
+}
+/* Menu de navigation */
+.menu {
+    width: 932px; /* Utilise la largeur spécifiée dans Figma */
+    text-align: right; /* Aligne le contenu du menu à droite */
+    margin-top: 20px;
+    margin-left: auto; /* Permet d’aligner le menu à droite */
+    color: #000;
+    font-family: "Lora", serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+}
+
+.menu li {
+    font-style: normal;
+}
+
+/* Styles des liens du menu */
+.menu a {
+    text-decoration: none;
+    color: #0c0c0c;
+    transition: transform 0.2s ease, border-bottom 0.2s ease;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0b0b0b;
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+/* Effets de survol */
+.menu a:hover {
+    transform: scale(1.1); /* Agrandit légèrement le texte */
+}
+
+.menu a:hover::after {
+    width: 100%; /* Souligne le texte */
+}
